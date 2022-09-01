@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.edit
+import androidx.preference.PreferenceManager
 import com.example.janken_new.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +22,11 @@ class MainActivity : AppCompatActivity() {
         binding.gu.setOnClickListener { onJankenButtontapped(it) }
         binding.choki.setOnClickListener { onJankenButtontapped(it) }
         binding.pa.setOnClickListener { onJankenButtontapped(it) }
+
+        val pref = PreferenceManager.getDefaultSharedPreferences(this)
+        pref.edit {
+            clear()
+        }
     }
 
     //遷移処理
