@@ -49,8 +49,9 @@ class ResultActivity : AppCompatActivity() {
             0 -> binding.resultLabel.setText(R.string.result_draw)
             1 -> binding.resultLabel.setText(R.string.result_win)
             2 -> binding.resultLabel.setText(R.string.result_lose)
-
         }
+        //戻る処理
+        binding.backButton.setOnClickListener { finish() }
 
 
     }
