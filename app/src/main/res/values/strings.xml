@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Janken_new</string>
+    <string name="janken_text">じゃ～んけ～んっ！！！！</string>
+    <string name="go">プレーヤー：グー</string>
+    <string name="choki">プレーヤー：チョキ</string>
+    <string name="pa">プレーヤー：パー</string>
 </resources>
