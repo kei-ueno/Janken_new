@@ -4,4 +4,8 @@
     <string name="go">プレーヤー：グー</string>
     <string name="choki">プレーヤー：チョキ</string>
     <string name="pa">プレーヤー：パー</string>
+    <string name="back_text">戻る</string>
+    <string name="resultLabel">結果！</string>
+    <string name="myHandImage">プレーヤーの出した手</string>
+    <string name="comHandImage">コンピュータの出した手</string>
 </resources>
