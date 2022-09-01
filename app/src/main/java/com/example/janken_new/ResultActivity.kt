@@ -2,6 +2,7 @@ package com.example.janken_new
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.edit
 import androidx.preference.PreferenceManager
 import com.example.janken_new.databinding.ActivityResultBinding
 
@@ -69,16 +70,15 @@ class ResultActivity : AppCompatActivity() {
                     winningStreakCount + 1
                 else -> 0
             }
-        val editor = pref.edit()
 
-
-        editor.putInt("GAME_COUNT", gameCount + 1)
-            .putInt("WINNING_STREAK_COUNT", edtWinningStreakCount)
-            .putInt("LAST_MY_HAND", myHand)
-            .putInt("LAST_COM_HAND", comHand)
-            .putInt("BEFORE_LAST_COM_HAND", lastComHand)
-            .putInt("GAME_RESULT", gameResult)
-            .apply()
+        pref.edit {
+            putInt("GAME_COUNT", gameCount + 1)
+            putInt("WINNING_STREAK_COUNT", edtWinningStreakCount)
+            putInt("LAST_MY_HAND", myHand)
+            putInt("LAST_COM_HAND", comHand)
+            putInt("BEFORE_LAST_COM_HAND", lastComHand)
+            putInt("GAME_RESULT", gameResult)
+        }
     }
 
 }
