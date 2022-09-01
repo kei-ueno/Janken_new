@@ -7,18 +7,18 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/gu"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="16dp"
         android:scaleType="fitCenter"
         android:contentDescription="@string/go"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/choki"
         app:srcCompat="@drawable/gu"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+        app:layout_constraintTop_toTopOf="@+id/choki" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/choki"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:contentDescription="@string/choki"
@@ -31,22 +31,22 @@
         app:srcCompat="@drawable/choki" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/pa"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="16dp"
         android:contentDescription="@string/pa"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2"
-        app:srcCompat="@drawable/gu" />
+        app:layout_constraintStart_toEndOf="@+id/choki"
+        app:layout_constraintTop_toTopOf="@+id/choki"
+        app:srcCompat="@drawable/pa" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/janken_text"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintBottom_toTopOf="@+id/choki"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
