@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     //遷移処理
     fun onJankenButtontapped(view: View?) {
         val intent = Intent(this, ResultActivity::class.java)
+        intent.putExtra("MY_HAND", view?.id)
         startActivity(intent)
     }
 }
